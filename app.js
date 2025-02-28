@@ -14,9 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // Fetch users from the users.json file
         try {
           const response = await fetch('users.json');
-          const users = await response.json();
 
-          console.log(users); // Log the fetched data to the console
+          // Check the response status and log it
+          if (!response.ok) {
+            console.error('Failed to load users.json:', response.statusText);
+            return;
+          }
+
+          const data = await response.json();  // Parse the JSON data
+          
+          // Log the fetched data to see its structure
+          console.log('Fetched data:', data);
+
+          // Extract the users array from the data
+          const users = data.users;
 
           // Ensure users is an array before calling .find()
           if (Array.isArray(users)) {
