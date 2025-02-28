@@ -1,4 +1,7 @@
 /* Make the body take full height of the viewport */
+/*        <button id="promote-btn" class="btn">Promote</button>*/
+/*        <button id="demote-btn" class="btn">Demote</button>*/
+/*        <button id="sign-out-btn" class="btn">Sign Out</button>*/
 body, html {
   height: 100%;
   margin: 0;
@@ -43,12 +46,17 @@ h2 {
   transition: 0.3s;
 }
 
-#register-btn {
+#promote-btn {
   background-color: #3498db;
   color: white;
 }
 
-#logout-btn {
+#demote-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#sign-out-btn {
   background-color: #e74c3c;
   color: white;
 }
