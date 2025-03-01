@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error 404</title>
+  <script>
+    // Get the current path
+    const path = window.location.pathname;
+
+    // Redirect logic using window.location.href
+    if (path === '/' || path === '/index.html') {
+      // If on the home page, redirect to login.html
+      window.location.href = '/login.html';
+    } else if (path === '/dashboard') {
+      // If on /dashboard, redirect to dashboard.html
+      window.location.href = '/dashboard.html';
+    } else {
+      // Optionally, handle other cases or leave as a 404
+      window.location.href = '/404.html';
+    }
+  </script>
+</head>
+<body>
+  <h1>Error Code 404</h1>
+  <p>Page not found.</p>
+</body>
+</html>
