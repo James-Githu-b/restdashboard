@@ -1,1 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;            /* Make the body a flex container */
+  justify-content: center;  /* Horizontally center the content */
+  align-items: center;      /* Vertically center the content */
+  height: 100vh;            /* Ensure the body takes the full height of the viewport */
+  margin: 0;                /* Remove default margin */
+}
